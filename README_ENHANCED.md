@@ -71,6 +71,29 @@ Advanced AI Digital Twin with dual optimization paths for M3 MacBook Air.
 python app_enhanced.py
 ```
 
+## Cloning the Repository
+
+To get a local copy up and running, follow these simple steps.
+
+### Prerequisites
+
+You need to have `git` installed on your system.
+
+### Installation
+
+1.  Clone the repo
+    ```sh
+    git clone git@github.com:Smacksmack206/XTTSPipelineOrchestration.git
+    ```
+2.  Navigate to the repository directory
+    ```sh
+    cd XTTSPipelineOrchestration
+    ```
+3.  Initialize and update submodules
+    ```sh
+    git submodule update --init --recursive
+    ```
+
 ## 📊 Performance Comparison
 
 | Feature | Basic Path | Advanced Path |
