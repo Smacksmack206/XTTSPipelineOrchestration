@@ -1,0 +1,10 @@
+gradio
+requests
+TTS
+torch
+torchaudio
+psutil
+opencv-python
+numpy
+librosa
+face-recognition
