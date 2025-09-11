@@ -1,75 +1,22 @@
-# 🚀 Mac NetNavi Enhanced
+# 🚀 Mac NetNavi
 
-Advanced AI Digital Twin with dual optimization paths for M3 MacBook Air.
-
-## 🎯 Two Optimized Paths
-
-### 🔥 Basic Path
-- **Speed**: Ultra-fast generation (30-60s)
-- **AI**: Ollama with lightweight models
-- **Voice**: XTTS high-quality cloning
-- **Video**: Static image with audio
-- **Use Case**: Quick prototypes, testing
-
-### ⚡ Advanced Path  
-- **Quality**: Maximum fidelity output
-- **AI**: Multiple backends (Ollama + Transformers)
-- **Voice**: XTTS + Coqui options
-- **Video**: Animated with mouth movement
-- **Features**: Driving video support
-- **Use Case**: Production-quality twins
-
-## 🧠 Local AI Models
-
-### Ollama Models (Recommended)
-- **llama3.2:3b** - Fastest, 2GB RAM
-- **llama3.2** - Balanced, 4GB RAM  
-- **mistral** - Creative responses, 4GB RAM
-- **phi3** - Efficient reasoning, 2GB RAM
-- **codellama** - Technical content
-
-### Transformers Models (Offline)
-- **DialoGPT-small** - Fast chat responses
-- **DialoGPT-medium** - Better conversations
-- **BlenderBot-400M** - Optimized chatbot
-
-## 🎤 Voice Options
-
-### High Quality (XTTS)
-- Perfect voice cloning
-- Any language support
-- 10-15s generation time
-- Requires voice sample
-
-### Fast (Coqui TTS)
-- Quick generation (3-5s)
-- Good quality synthetic voice
-- No voice sample needed
-- Multiple voice options
-
-## 🎭 Video Generation
-
-### Static Video
-- Image + audio combination
-- Instant generation
-- Perfect lip-sync timing
-- Professional quality
-
-### Animated Video
-- Face detection + mouth animation
-- Audio-driven movement
-- Driving video support
-- Realistic expressions
+An AI-powered tool to create digital twins with animated faces from an image and audio.
 
 ## 🚀 Quick Start
 
-```bash
-# Enhanced setup
-./setup_enhanced.sh
+1.  **Provide your media:**
+    *   Place your source image (e.g., `my_face.png`) and source audio (e.g., `my_voice.wav`) in the `results` directory.
+    *   (Optional) If you want to transfer the face onto a video, also place your source video (e.g., `my_video.mp4`) in the `results` directory.
 
-# Run enhanced version
-python app_enhanced.py
-```
+2.  **Run the application:**
+    The application will automatically pick up the files from the `results` directory.
+
+    ```bash
+    python app_memory_optimized.py
+    ```
+
+    *   If a source video is provided, the face from the source image will be swapped onto the video.
+    *   If no source video is provided, a new video will be generated with the source image's face animated according to the audio.
 
 ## Cloning the Repository
 
@@ -94,68 +41,35 @@ You need to have `git` installed on your system.
     git submodule update --init --recursive
     ```
 
-## 📊 Performance Comparison
+## 🧠 AI Models
 
-| Feature | Basic Path | Advanced Path |
-|---------|------------|---------------|
-| Generation Time | 30-60s | 60-120s |
-| AI Quality | Good | Excellent |
-| Voice Quality | High | Customizable |
-| Video Quality | Static | Animated |
-| RAM Usage | 2-4GB | 4-8GB |
-| CPU Usage | Medium | High |
+This project can use various local AI models for different tasks.
 
-## 🛠️ Advanced Features
+### Ollama Models (Recommended)
+- **llama3.2:3b** - Fastest, 2GB RAM
+- **llama3.2** - Balanced, 4GB RAM
+- **mistral** - Creative responses, 4GB RAM
+- **phi3** - Efficient reasoning, 2GB RAM
+- **codellama** - Technical content
 
-### Multi-Modal Input
-- Portrait images (any format)
-- Voice samples (wav/mp3/m4a)
-- Driving videos (mp4/mov)
-- Text prompts
+### Transformers Models (Offline)
+- **DialoGPT-small** - Fast chat responses
+- **DialoGPT-medium** - Better conversations
+- **BlenderBot-400M** - Optimized chatbot
 
-### AI Customization
-- Model selection per use case
-- Temperature/creativity control
-- Response length limits
-- Context awareness
+## 🎤 Voice Options
 
-### Output Options
-- Multiple video formats
-- Audio export (wav/mp3)
-- Batch processing
-- History tracking
+### High Quality (XTTS)
+- Perfect voice cloning
+- Any language support
+- 10-15s generation time
+- Requires voice sample
 
-## 🔧 Optimization Tips
-
-### For Speed (Basic Path)
-```python
-# Use lightweight model
-model = "llama3.2:3b"
-tts_quality = "Fast (Coqui)"
-video_type = "Static"
-```
-
-### For Quality (Advanced Path)
-```python
-# Use full model
-model = "llama3.2"
-tts_quality = "High Quality (XTTS)"
-video_type = "Animated"
-```
-
-## 🎯 Use Cases
-
-### Basic Path
-- Rapid prototyping
-- Voice message creation
-- Simple avatars
-- Testing concepts
-
-### Advanced Path
-- Professional presentations
-- Marketing content
-- Educational videos
-- Entertainment
+### Fast (Coqui TTS)
+- Quick generation (3-5s)
+- Good quality synthetic voice
+- No voice sample needed
+- Multiple voice options
 
 ## 🚨 Troubleshooting
 
@@ -175,15 +89,6 @@ ollama pull llama3.2:3b
 # Reinstall TTS
 pip uninstall TTS
 pip install TTS --no-cache-dir
-```
-
-### Performance Issues
-```bash
-# Monitor resources
-top -pid $(pgrep -f "python app_enhanced.py")
-
-# Reduce model size
-# Use llama3.2:3b instead of llama3.2
 ```
 
 ## 📈 Roadmap
