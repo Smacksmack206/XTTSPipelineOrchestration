@@ -1,5 +1,6 @@
 # Virtual environments
 venv/
+venv310/
 venv_*/
 tts_env/
 env/
