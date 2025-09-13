@@ -1,0 +1,24 @@
+# Professional Deepfake Engine Requirements - macOS Compatible
+
+# Core ML/AI
+torch>=2.0.0
+torchvision>=0.15.0
+onnxruntime>=1.15.0
+opencv-python>=4.8.0
+numpy>=1.24.0
+
+# Face Analysis (Industry Standard)
+insightface>=0.7.3
+face-alignment>=1.3.5
+
+# Advanced Image Processing
+scikit-image>=0.21.0
+Pillow>=10.0.0
+imageio>=2.31.0
+
+# Video Processing
+ffmpeg-python>=0.2.0
+
+# Additional dependencies
+gdown>=4.7.1
+requests>=2.31.0

@@ -1,0 +1,15 @@
+{
+  "models": {
+    "insightface": "models/buffalo_l",
+    "simswap": "models/simswap_512.onnx",
+    "face_parsing": "models/face_parsing.onnx",
+    "opencv_detector": "models/opencv_face_detector_uint8.pb",
+    "opencv_config": "models/opencv_face_detector.pbtxt"
+  },
+  "settings": {
+    "detection_confidence": 0.5,
+    "swap_quality": "high",
+    "blend_method": "multiband",
+    "color_matching": "advanced"
+  }
+}

@@ -399,6 +399,9 @@ if __name__ == "__main__":
     * { max-width: 100%; }
     video { max-height: 500px; }
     audio { max-width: 400px; }
+    .gradio-container.gradio-container-4-44-1 .contain .status-info {
+        background: #44efd645;
+    }
     </style>
     """
     

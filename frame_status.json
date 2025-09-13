@@ -1,0 +1,23 @@
+{
+  "processing": true,
+  "current_frame": 102,
+  "total_frames": 736,
+  "fps": 0,
+  "elapsed_time": 61.87362790107727,
+  "estimated_remaining": 1531.3420023918152,
+  "frames_per_second": 0.41401594092616173,
+  "last_frame_time": 1757762497.645598,
+  "quality_metrics": {
+    "ssim": 0,
+    "psnr": 0
+  },
+  "memory_usage": 0,
+  "gpu_usage": 0,
+  "thermal_state": "normal",
+  "current_operation": "Chunked Face Swap",
+  "preview_path": "",
+  "error_count": 0,
+  "last_update": "2025-09-13T05:21:37.645608",
+  "start_time": 1757762435.77197,
+  "last_frame": 102
+}
